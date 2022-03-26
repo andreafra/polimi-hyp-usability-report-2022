@@ -20,5 +20,5 @@
 *.mtc
 *.mtc1
 *.out
-*.pdf
+./*.pdf
 *.synctex.gz
