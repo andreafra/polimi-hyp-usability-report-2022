@@ -36,6 +36,7 @@ Graphical results are represented in Fig \ref{BarsNielsenCrop} and in Fig \ref{B
     \begin{minipage}{\linewidth}
         \centering
         \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsNielsenCrop.png}}%
+        \captionsetup{justification=centering}
         \caption{Nielsen heuristics evaluation summary}
         \label{BarsNielsenCrop}
     \end{minipage}
@@ -45,6 +46,7 @@ Graphical results are represented in Fig \ref{BarsNielsenCrop} and in Fig \ref{B
     \begin{minipage}{\linewidth}
         \centering
         \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsMileCrop.png}}%
+        \captionsetup{justification=centering}
         \caption{Mile heuristics evaluation summary}
         \label{BarsMileCrop}
     \end{minipage}
@@ -101,24 +103,24 @@ Graphical results are represented in Fig \ref{BarsNielsenCrop} and in Fig \ref{B
                                         & MN4 &  &  \\ \cmidrule{2-4} 
                                         & MN5 &  &  \\ \midrule
 \textbf{Content}                       & MC1 &  &  \\ \midrule
-\multirow{5}{*}{\textbf{Presentation}} & MP1 &  &  \\ \cmidrule{2-4} 
-                                        & MP2 &  &  \\ \cmidrule{2-4} 
-                                        & MP3 &  &  \\ \cmidrule{2-4} 
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-4} 
+                                        & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-4} 
+                                        & MP3 & & \\ \cmidrule{2-4} 
                                         & MP4 &  &  \\ \cmidrule{2-4} 
                                         & MP5 &  &
 \end{tabularx}
 
 bla bl
-
 \subsection{Discussion of results}
 \subsubsection{Discussion within Nielsen's heuristics}
-\begin{enumerate}
-    \item \textbf{Visibility of system status}\\
+\begin{itemize}
+    \item \textbf{H1 Visibility of system status}\\
     Commento su heuristic (Figura \ref{fig:1-image-ref})
     \begin{figure}[!ht]
         \begin{minipage}{\linewidth}
             \centering
-            \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{images/test.png}}%
+            \captionsetup{justification=centering}
+            \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{images/test.png}}%
             \caption{Label dell'immagine}
             \label{fig:1-image-ref}
         \end{minipage}
@@ -126,11 +128,33 @@ bla bl
     \item \textbf{Nielsen 2}\\
     Bla bla
     \item bla bla
-\end{enumerate}
-
+\end{itemize}
 
 \subsubsection{Discussion within Mile's heuristics}
-
+\begin{itemize}
+    \item \textbf{MP1 Text lay out}\\
+    No critical aspects found, the text is always readable and of the appropriate size.\\
+    \item \textbf{MP2 Interaction placeholders-semiotics}\\
+    A few minor problems were found in this heuristic: some icons are mismatched with regards to their meaning, and there are labels that are unclear in their functionalities (Fig. \ref{MP2-1} and \ref{MP2-2})
+    \begin{figure}[!ht]
+        \begin{minipage}{\linewidth}
+            \centering
+            \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/MP2-1.png}}%
+            \captionsetup{justification=centering}
+            \caption{Conventionally, the "+" should expand the page,\\but in this case the button leads to a new page}
+            \label{MP2-1}
+        \end{minipage}
+    \end{figure}
+    \begin{figure}[!ht]
+        \begin{minipage}{\linewidth}
+            \centering
+            \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/MP2-2.png}}%
+            \captionsetup{justification=centering}
+            \caption{In the venues form page, it's unclear what does "TOP" mean in this context.\\If it's based on users reviews, there is no rating system explained}
+            \label{MP2-2}
+        \end{minipage}
+    \end{figure}
+\end{itemize}
 
 \pagebreak
 Commento
