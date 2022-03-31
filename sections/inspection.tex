@@ -117,29 +117,11 @@ Since not all heuristics apply in all situations, we could also assign a ``N/A''
 \subsection{Execution of the study}
 % How the study was performed
 
+\pagebreak
+
 \subsection{Results}
-Inspection was initially carried out individually by each evaluator. At the end of this first phase, a meeting was held in order to reach an agreed score for each heuristic. The final scores agreed on usually differed from the arithmetic mean: the level of disagreement over each topic (represented by the variance) was also considered.
-Graphical results are represented in Fig \ref{BarsNielsenCrop} and in Fig \ref{BarsMileCrop}.
-
-\begin{figure}[!ht]
-    \begin{minipage}{\linewidth}
-        \centering
-        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsNielsenCrop.png}}%
-        \captionsetup{justification=centering}
-        \caption{Nielsen heuristics evaluation summary}
-        \label{BarsNielsenCrop}
-    \end{minipage}
-\end{figure}
-
-\begin{figure}[!ht]
-    \begin{minipage}{\linewidth}
-        \centering
-        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsMileCrop.png}}%
-        \captionsetup{justification=centering}
-        \caption{Mile heuristics evaluation summary}
-        \label{BarsMileCrop}
-    \end{minipage}
-\end{figure}
+Inspection was initially carried out individually by each evaluator. At the end of this first phase, a meeting was held in order to reach an agreed score for each heuristic.\\
+Below is a summary table grouping each heuristics into rows with their corresponding agreed score and comment.
 
 \begin{tabularx}{\linewidth}{l c X}
 \toprule
@@ -168,8 +150,7 @@ Graphical results are represented in Fig \ref{BarsNielsenCrop} and in Fig \ref{B
     H10 &  &
 \end{tabularx}
 
-\paragraph{Mile}
-
+\paragraph{MiLe}
 
 \begin{tabularx}{\linewidth}{l c c X}
 \toprule
@@ -194,12 +175,51 @@ Graphical results are represented in Fig \ref{BarsNielsenCrop} and in Fig \ref{B
 \textbf{Content}                       & MC1 &  &  \\ \midrule
 \multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-4} 
                                         & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-4} 
-                                        & MP3 & & \\ \cmidrule{2-4} 
+                                        & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon\\ \cmidrule{2-4} 
                                         & MP4 &  &  \\ \cmidrule{2-4} 
                                         & MP5 &  &
 \end{tabularx}
 
-bla bl
+\pagebreak
+
+The final scores agreed on usually differed from the arithmetic mean: the level of disagreement over each topic (represented by the variance) was also considered.\\
+We provide the results also in a graphical visualization, highlighting both the arithmetic mean and the variance (Fig \ref{BarsNielsenCrop} and Fig \ref{BarsMileCrop}).
+
+\begin{figure}[!ht]
+    \begin{minipage}{\linewidth}
+        \centering
+        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsNielsenCrop.png}}%
+        \captionsetup{justification=centering}
+        \caption{Nielsen's heuristics evaluation summary}
+        \label{BarsNielsenCrop}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[!ht]
+    \begin{minipage}{\linewidth}
+        \centering
+        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsMileCrop.png}}%
+        \captionsetup{justification=centering}
+        \caption{MiLe's heuristics evaluation summary}
+        \label{BarsMileCrop}
+    \end{minipage}
+\end{figure}
+
+Mean values by content, navigation and presentation heuristics are provided in Fig \ref{BarsAggregated}.\\
+There is an overall consensus that the website presents major problems on the content part. Explanations will be tackled in the next sections. 
+
+\begin{figure}[!ht]
+    \begin{minipage}{\linewidth}
+        \centering
+        \makebox[\textwidth][c]{\includegraphics[width=0.6\textwidth]{images/BarsAggregated.png}}%
+        \captionsetup{justification=centering}
+        \caption{Aggregated heurstics data by dimensions}
+        \label{BarsAggregated}
+    \end{minipage}
+\end{figure}
+
+\pagebreak
+
 \subsection{Discussion of results}
 \subsubsection{Discussion within Nielsen's heuristics}
 \begin{itemize}
@@ -219,31 +239,52 @@ bla bl
     \item bla bla
 \end{itemize}
 \pagebreak
-\subsubsection{Discussion within Mile's heuristics}
+\subsubsection{Discussion within MiLe's heuristics}
 \begin{itemize}
     \item \textbf{MP1 Text lay out}\\
-    No critical aspects found, the text is always readable and of the appropriate size.\\
+        No critical aspects found, the text is always readable and of the appropriate size.\\
     \item \textbf{MP2 Interaction placeholders-semiotics}\\
-    Some minor problems were found in this heuristic: some icons are mismatched with regards to their meaning, and there are labels that are unclear in their functionalities (Fig. \ref{MP2-1} and \ref{MP2-2})
-    \begin{figure}[!ht]
-        \begin{minipage}{\linewidth}
-            \centering
-            \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/MP2-1.png}}%
-            \captionsetup{justification=centering}
-            \caption{Conventionally, the "+" should expand the page,\\
-            but in the home page it leads to a new page}
-            \label{MP2-1}
-        \end{minipage}
-    \end{figure}
-    \begin{figure}[!ht]
-        \begin{minipage}{\linewidth}
-            \centering
-            \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/MP2-2.png}}%
-            \captionsetup{justification=centering}
-            \caption{In the venues form page, it's unclear what does "TOP" mean in this context.\\If it's based on users reviews, there is no rating system explained}
-            \label{MP2-2}
-        \end{minipage}
-    \end{figure}
+        Some minor problems were found in this heuristic: some icons are mismatched with regards to their meaning, and there are labels that are unclear in their functionalities (Fig. \ref{MP2-1} and \ref{MP2-2})
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/MP2-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{Conventionally, the "+" should expand the page,\\
+                but in the home page it leads to a new page}
+                \label{MP2-1}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/MP2-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{In the venues form page, it's unclear what does "TOP" mean in this context.\\If it's based on users reviews, there is no rating system explained}
+                \label{MP2-2}
+            \end{minipage}
+        \end{figure}
+    \item \textbf{MP3 Interaction placeholders-consistency}\\
+        Some minor problems were found in this heuristic:
+        a number of icons are used with multiple meanings (for example the "+" sometimes expands a paragraph section, other times it leads to a new page like in Fig \ref{MP2-1}), and many interactive labels providing the same functionalities are named differently across the same page (Fig \ref{MP3-1} and Fig \ref{MP3-2}).
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/MP3-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{In the Fashion \& Shopping page, interactive labels are equivalent in terms of functionalities are named differently, sometimes even in confusing ways ("Stupisciti" which translates to "Amaze yourself" it's not really suggestive of its functionality)}
+                \label{MP3-1}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/MP3-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{In any dedicated restaurant page, interactive elements\\for contacting and locating the place are labeled differently}
+                \label{MP3-2}
+            \end{minipage}
+        \end{figure}
 \end{itemize}
 
 \pagebreak
