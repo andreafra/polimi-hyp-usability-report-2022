@@ -21,9 +21,98 @@
 \subsection{Method}
 % what is inspection based usability evaluation
 % specific heuristics and metrics used
+Inspection-based usability evaluation allows teams of evaluators to perform
+a systemic analisys of UI/UX aspects of an application (a website, in our case).
+We adopted the widely used \emph{heuristic evaluation}, as the main usability inspection method, in which the evaluators concentrate on a set of principles (``heuristics'') to test the usability of the application.
+
 \subsubsection{Heuristics}
 
+This section explains the different heuristics we adopted to evaluate the
+website compliance to usability quality principles. In particular, we used
+\emph{Nielsen's} and a subset of \emph{MiLE} (Milano Lugano usability Evaluation method) heuristics.
+
+\paragraph*{Nielsen's heuristics}
+
+\begin{enumerate}[start=1,label={\bf H\arabic{*}}]
+    \item \textbf{Visibility of system status:} does the user know where they are and    
+          what's going on?
+    \item \textbf{Match between system and the real world:} does the system use 
+          conventions known to the users?
+    \item \textbf{User control and freedom:} can the user leave unwanted state quickly? 
+          Is undo/redo available to them?
+    \item \textbf{Consistency and standards:} do multiple words/elements/actions mean    
+          the same thing?
+    \item \textbf{Error prevention:} do the application try to prevent problems 
+          from occurring (e.g.: checking inputs before submitting them)?
+    \item \textbf{Recognition rather than recall:} are options visible or easily 
+          retrievable?
+    \item \textbf{Flexibility and efficiency of use:} are accelerators available?
+    \item \textbf{Aesthetic and minimalist design:} is dialogue containing only relevant 
+          informations?
+    \item \textbf{Help users recognize, diagnose and recover from errors:} are error 
+          codes in plain language? Do they suggest a possible solution?
+    \item \textbf{Help and documentation:} (if any) is it easily searchable?
+\end{enumerate}
+
+\paragraph*{MiLE heuristics}
+
+We can further subdivide MiLE heuristics in 3 categories: navigation, content, presentation.
+
+\subparagraph*{Navigation}
+
+\begin{enumerate}[start=1,label={\bf MN\arabic{*}}]
+    \item \textbf{Interaction consistency:} do pages of the same type have the same links
+          and interaction capability?
+    \item \textbf{Group navigation:} is it easy to navigate from and among groups of
+          ``items''?
+    \item \textbf{Structural Navigation:} is it easy to navigate among the ``components'' of a topic?
+    \item \textbf{Semantic Navigation:} is it easy to navigate between related topics?
+    \item \textbf{Landmarks:} are landmarks useful to reach the key parts of the web
+          site?
+\end{enumerate}
+
+\subparagraph*{Content}
+
+\begin{enumerate}[start=1,label={\bf MC\arabic{*}}]
+    \item \textbf{Information overload:} is the information in a page too much/too
+          little?
+\end{enumerate}
+
+\subparagraph*{Presentation}
+
+\begin{enumerate}[start=1,label={\bf MP\arabic{*}}]
+    \item \textbf{Text lay out:} is the text readable? Is font size appropriate?
+    \item \textbf{Interaction placeholders-semiotics:} are textual or visual    
+          labels of interactive elements ``expressive'' and meaningful?
+    \item \textbf{Interaction placeholders-consistency:} are textual or visual 
+          labels of interactive elements consistent in terms of wording, icon, 
+          position, etc.?
+    \item \textbf{Spatial allocation:} is the on-screen allocation of contents 
+          and visual appropriate for their relevance? Are ``semantically 
+          related'' elements close and ``semantically distant'' element far 
+          away?
+    \item \textbf{Consistency of Page Structure:} do pages of the same type 
+          have the same layout?
+\end{enumerate}
+
 \subsubsection{Metrics}
+
+To keep the inspection process straightforward, we agreed on evaluating the compliance of the website to each heuristic on a scale from 0 to 3, without decimals. In this way, we avoid situations where it's hard to define the difference two close numbers on larger scales (e.g.: 6 and 7 on a scale from 1 to 10).
+
+\begin{figure*}[h]
+    \begin{tabular}{c l l}
+        \toprule
+        \textbf{Score} & \textbf{Meaning} & \textbf{Comment} \\
+        \midrule
+        0 & Bad & Heuristic not satified at all \\
+        1 & Worse than better & There are multiple violations of the heuristic \\
+        2 & Better than worse & Overall the heuristic is satified with some  exception \\
+        3 & Good & Heuristic satified\\
+        \bottomrule
+    \end{tabular}
+\end{figure*}
+
+Since not all heuristics apply in all situations, we could also assign a ``N/A'' (``not applicable'') in such cases.
 
 \subsection{Execution of the study}
 % How the study was performed
