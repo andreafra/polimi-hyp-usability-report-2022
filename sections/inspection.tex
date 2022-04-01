@@ -176,8 +176,8 @@ Below is a summary table grouping each heuristics into rows with their correspon
 \multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-4} 
                                         & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-4} 
                                         & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon\\ \cmidrule{2-4} 
-                                        & MP4 &  &  \\ \cmidrule{2-4} 
-                                        & MP5 &  &
+                                        & MP4 & 1 & Some critical and useful information and links are allocated in in a bad way\\ \cmidrule{2-4} 
+                                        & MP5 & 3 & No major problems, pages of the same type have the same layous
 \end{tabularx}
 
 \pagebreak
@@ -242,9 +242,9 @@ There is an overall consensus that the website presents major problems on the co
 \subsubsection{Discussion within MiLe's heuristics}
 \begin{itemize}
     \item \textbf{MP1 Text lay out}\\
-        No critical aspects found, the text is always readable and of the appropriate size.\\
+        We haven't found any critical aspect, the text is always readable and of the appropriate size.\\
     \item \textbf{MP2 Interaction placeholders-semiotics}\\
-        Some minor problems were found in this heuristic: some icons are mismatched with regards to their meaning, and there are labels that are unclear in their functionalities (Fig. \ref{MP2-1} and \ref{MP2-2})
+        We detected a number of minor problems in this heuristic: some icons are mismatched with regards to their meaning, and there are labels that are unclear in their functionalities (Fig. \ref{MP2-1} and \ref{MP2-2})
         \begin{figure}[!ht]
             \begin{minipage}{\linewidth}
                 \centering
@@ -285,6 +285,31 @@ There is an overall consensus that the website presents major problems on the co
                 \label{MP3-2}
             \end{minipage}
         \end{figure}
+        \pagebreak
+    \item \textbf{MP4 Spatial allocation}\\
+        The overall allocation of elements in each page is good, but a critical aspect lowered the score: the venues form page through which the user can retrieve venues through various filters has an anchor in the footer only ("All the venues", Fig \ref{MP4-1}). Given the importance of such page, the lack of a link in the top menu is a major problem that even affects the navigation.\\
+        Other problems are the positioning of the partners logos and links which precede the more important footer links (Fig \ref{MP4-1})), and the placing of the anchors leading to sections of the same page (Fig \ref{MP4-2}): as their role is simplifying navigation, allocating them at the top of the page only is not very appropriate as the user is forced to scroll all the way back to the top just to change section.
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/MP4-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{"All the venues" link present only in the footer\\Partners' logos precede footer links}
+                \label{MP4-1}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/MP4-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{This anchors placement hardens the navigation aspect too\\A solution would be making them sticky (always on top of page) or putting them in a side bar}
+                \label{MP4-2}
+            \end{minipage}
+        \end{figure}
+    \item \textbf{MP5 Consistency of Page Structure}\\
+        We didn't detect major problems in this aspect, pages of the same type have the same layout.\\
+        For example, all venues' pages have a brief initial paragraph describing the attraction, a middle section with various useful information like contancts, schedule and pricing, and finally a final part of the page is dedicated to suggestions. 
 \end{itemize}
 
 \pagebreak
