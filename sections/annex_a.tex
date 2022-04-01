@@ -2,59 +2,69 @@
 
 \section{Annex A: Inspection}
 
+% Col types:
+% p - paragrafo ({3cm} specifica la larghezza)
+% c - center (allinea al centro)
+% X - espande per riempire la larghezza 
+% (\linewidth = riempi la riga in orizzontale)
+%     fa parte del pkg 'tabularx'
+%
+% '&' separa le colonne => nel nostro caso ne servono 3
+% c1 & c2 & c3 & c4
+% \\ <- linebreak/a capo
+% \midrule <- disegna una riga orizzontale
+%
+\begin{tabularx}{\linewidth}{p{3cm} c c X}
+    % \toprule
+    \textbf{Page Url} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} 
+    \\ \midrule
+    \endfirsthead
+    \toprule
+    \textbf{Page Url} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment}
+    \\ \midrule
+    \endhead
+    \midrule
+    \footnotesize [Continues on next page]
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    % body
+    ... & H1 & 1 & There is a difficulty in navigation as breadcrumbs are sometimes either missing or incorrect.\par When using the search bar, there is no feedback on the progress status, the page can appear frozen. \\ \midrule
+    ... & H2 & ... & ... \\ \midrule
+     & H3 &  & \\ \midrule
+     & H4 &  & \\ \midrule
+     & H5 &  & \\ \midrule
+     & H6 &  & \\ \midrule
+     & H7 &  & \\ \midrule
+     & H8 &  & \\ \midrule
+     & H9 &  & \\ \midrule
+     & H10 & &
+\end{tabularx}
+    
 \begin{tabularx}{\linewidth}{l c c X}
-    \toprule
-    \textbf{Page Url} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} \\
-    \midrule
-    \endfirsthead
-    \toprule
-    \textbf{Page Url} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} \\
-    \midrule
-    \endhead
-    \midrule
-    \footnotesize [Continues on next page]
-    \endfoot
-    \bottomrule
-    \endlastfoot
-        % body
-        H1 & 1 & There is a difficulty in navigation as breadcrumbs are sometimes either missing or incorrect.\par When using the search bar, there is no feedback on the progress status, the page can appear frozen. \\ \midrule
-        H2 &  & \\ \midrule
-        H3 &  & \\ \midrule
-        H4 &  & \\ \midrule
-        H5 &  & \\ \midrule
-        H6 &  & \\ \midrule
-        H7 &  & \\ \midrule
-        H8 &  & \\ \midrule
-        H9 &  & \\ \midrule
-        H10 &  &
-    \end{tabularx}
-    
-    \begin{tabularx}{\linewidth}{l c c X}
-    \toprule
-    \textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} \\
-    \midrule
-    \endfirsthead
-    \toprule
-    \textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} \\
-    \midrule
-    \endhead
-    \midrule
-    \footnotesize [Continues on next page]
-    \endfoot
-    \bottomrule
-    \endlastfoot
-    
-    \multirow{5}{*}{\textbf{Navigation}}   & MN1 & 0 & Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum \\ \cmidrule{2-4} 
-                                            & MN2 &  &  \\ \cmidrule{2-4} 
-                                            & MN3 &  &  \\ \cmidrule{2-4} 
-                                            & MN4 &  &  \\ \cmidrule{2-4} 
-                                            & MN5 &  &  \\ \midrule
-    \textbf{Content}                       & MC1 &  &  \\ \midrule
-    \multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-4} 
-                                            & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-4} 
-                                            & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon\\ \cmidrule{2-4} 
-                                            & MP4 &  &  \\ \cmidrule{2-4} 
-                                            & MP5 &  &
-    \end{tabularx}
-    
-    \pagebreak
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} \\
+\midrule
+\endhead
+\midrule
+\footnotesize [Continues on next page]
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multirow{5}{*}{\textbf{Navigation}}   & MN1 & 0 & Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum \\ \cmidrule{2-4} 
+    & MN2 &  &  \\ \cmidrule{2-4} 
+    & MN3 &  &  \\ \cmidrule{2-4} 
+    & MN4 &  &  \\ \cmidrule{2-4} 
+    & MN5 &  &  \\ \midrule
+\textbf{Content}                       & MC1 &  &  \\ \midrule
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-4} 
+    & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-4} 
+    & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon\\ \cmidrule{2-4} 
+    & MP4 &  &  \\ \cmidrule{2-4} 
+    & MP5 &  &
+\end{tabularx}
