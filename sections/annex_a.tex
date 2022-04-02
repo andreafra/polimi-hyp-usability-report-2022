@@ -14,13 +14,15 @@
 % \\ <- linebreak/a capo
 % \midrule <- disegna una riga orizzontale
 %
-\begin{tabularx}{\linewidth}{p{3cm} c c X}
+Here there are the individual results of each inspector.\\\\
+Evaluator Name: Fabio Camerota
+\begin{tabularx}{\linewidth}{c c X p{3cm}}
     % \toprule
-    \textbf{Page Url} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} 
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
     \\ \midrule
     \endfirsthead
     \toprule
-    \textbf{Page Url} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment}
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
     \\ \midrule
     \endhead
     \midrule
@@ -29,25 +31,26 @@
     \bottomrule
     \endlastfoot
     % body
-    ... & H1 & 1 & There is a difficulty in navigation as breadcrumbs are sometimes either missing or incorrect.\par When using the search bar, there is no feedback on the progress status, the page can appear frozen. \\ \midrule
-    ... & H2 & ... & ... \\ \midrule
-     & H3 &  & \\ \midrule
-     & H4 &  & \\ \midrule
-     & H5 &  & \\ \midrule
-     & H6 &  & \\ \midrule
-     & H7 &  & \\ \midrule
-     & H8 &  & \\ \midrule
-     & H9 &  & \\ \midrule
-     & H10 & &
+    H1 & 1 & The lack of bread crumbs is not a problem in the homepage.
+    In all the other links there are mistakes because either the bread crumbs are missing or the bread crumbs include "Home" & All links (except the homepage)\\ \midrule
+    H2 & 2 & There are universally recognized icons (e.g. Profile, Search, Menu). But there is the icon of an alarm clock instead of a clock. & Homepage, Restaurants \\ \midrule
+    H3 & 0 & When I insert date and number of people and I search, then is not possible anymore to change this data.& Hotel page\\ \midrule
+    H4 & 2 & The button "Contacts" looks like a button, but it's not. The same with the button "Map" & FAQ Coronavirus, 2 days Milano\\ \midrule
+    H5 & 1 & In the restaurant page there is no error for wrong compilation of the form. Similar problem when registering to the newsletter& Chiosetto, Homepage\\ \midrule
+    H6 & 3 & Whenever possible, this heuristic is always satisfied& All links\\ \midrule
+    H7 & 2 & The landmarks are useful, except the one about the Profile & All links\\ \midrule
+    H8 & 2 & The button about the Social Networks partially cover the text sometimes & Universities, Rents\\ \midrule
+    H9 & 1 & In the hotels page, if the geolocalization service fails, the website gives a not helpful error message. Instead in the restaurants page, the same error gives to the user instructions about what to do. & Hotels \\ \midrule
+    H10 & n/a & &
 \end{tabularx}
     
 \begin{tabularx}{\linewidth}{l c c X p{3cm}}
 \toprule
-\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{URLs} \\
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
 \midrule
 \endfirsthead
 \toprule
-\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{URLs} \\
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
 \midrule
 \endhead
 \midrule
@@ -57,15 +60,296 @@
 \endlastfoot
 
 \multirow{5}{*}{\textbf{Navigation}}   
-    & MN1 & 0 & Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum & URL1 \\ \cmidrule{2-5} 
+    & MN1 & 3 & & \\ \cmidrule{2-5} 
+    & MN2 & 2 & Reaching the Venues page is difficult. & Venues\\ \cmidrule{2-5} 
+    & MN3 & 3 & Navigate among Map, Gallery, Contacts is simple & La rinascente\\ \cmidrule{2-5} 
+    & MN4 & 3 & There are sections like "what's nearby" and "on the same theme" & Castello Sforzesco\\ \cmidrule{2-5} 
+    & MN5 & 2 & Same as H7 &\\ \midrule
+\textbf{Content}                       & MC1 & 2 & Information overload is managed well (except in the university page), thanks to "read more" and "see all". & University  \\ \midrule
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & & \\ \cmidrule{2-5} 
+    & MP2 & 2 & The text "Fly to Milano" doesn't reflect the goal of the website, that is booking hotels and not flights. The meaning of the label "Top" in the search bar is not clear & Hotels, Venues\\ \cmidrule{2-5} 
+    & MP3 & 2 & Some elements have different text but same meaning & Chiosetto\\ \cmidrule{2-5} 
+    & MP4 & 3 &  &\\ \cmidrule{2-5} 
+    & MP5 & 3 & &
+\end{tabularx}
+
+Evaluator Name: Alessio Hu
+\begin{tabularx}{\linewidth}{c c X p{3cm}}
+    % \toprule
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
+    \\ \midrule
+    \endfirsthead
+    \toprule
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
+    \\ \midrule
+    \endhead
+    \midrule
+    \footnotesize [Continues on next page]
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    % body
+    H1 & 1 & Bread crumps are poorly used,and sometimes they show an incorrect path. Furthermore the search bar does not show any visual representation in the progression of searching & Homepage\\ \midrule
+    H2 & 2 & Labels for section are brief but
+    descriptive, easy to understand
+    for the user (e.g. arriving and
+    getting around, fly to Milan)
+    Visual representations for specific
+    sections are quite effective (e.g.
+    showing pictures of art exhibitions
+    as thumbnail for the art section in
+    home, picture of a student for
+    the study section in home), but
+    some of them make no sense
+    (e.g picture of a random
+    building for the covid page) & Homepage, FAQ covid, Travel-info \\ \midrule
+    H3 & 1 & Many pages have at the top
+    some anchors leading to different
+    sections of the same page,
+    but users are not able to return to
+    the top after clicking on any of the
+    anchors, they have to scroll
+    all the way back up
+    Links leading to external sites
+    don't have a warning saying that the
+    user is leaving the site, nor it gets
+    opened in a different tab
+    Finally, due to their bad usage, bread
+    crumps are not helpful in undoing the
+    navigation (e.g. going through the
+    navigation path backwards), so the user
+    must rely on going back home or the
+    "back" button of the browser & FAQ covid, Rents, Universities, 2-days Milano\\ \midrule
+    H4 & 2 & The "+" most of the time works as intended,
+    expanding the section, but
+    occasionaly leads to a new page
+    (e.g. in home). Furthermore sometimes
+    the "-" is used in order to compress,
+    while other times its role is replaced by
+    an "x" & Castello Sforzesco, Homepage, events-month, miart\\ \midrule
+    H5 & 2 & Subscribing
+    to the newsletter with a
+    missing @ in the email will result
+    in an error message with suggestion,
+    but if the same error is done in the student
+    registration form no error prevention
+    message appears
+    Furthermore, some old links lead to
+    non-existent pages, should be deleted & Study \\ \midrule
+    H6 & 3 & In the search form for the venues,
+    restaurants and hotels suggestions
+    are present for type of venue
+    and location & Venues, restaurants, hotels\\ \midrule
+    H7 & 2 & Landmarks and shortcuts through the
+    top menu ease a lot the navigation,
+    though some options that are present
+    in the footer are missing in the header & \\ \midrule
+    H8 & 2 & Overall good, but some information
+    overload in the menu and in the
+    anchors mentioned before
+    Also transitions and animations
+    are sometimes present (e.g. carousel
+    scrolling, sections expansion
+    through the "+", reaching an anchor)
+    and other times
+    missing (e.g. dropdown of top menu) & \\ \midrule
+    H9 & 2 & An incorrect email in the newsletter
+    subscription will show a message
+    that does not help in the
+    error resolution,
+    but incorrect data in the student
+    form will suggest how to solve the
+    problems.
+    On the other hand, trying to access a
+    non-existent page will result
+    in a nice error message & \\ \midrule
+    H10 & 3 & Privacy policies are clear & Privacy policy
+\end{tabularx}
+    
+\begin{tabularx}{\linewidth}{l c c X p{3cm}}
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
+\midrule
+\endhead
+\midrule
+\footnotesize [Continues on next page]
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multirow{5}{*}{\textbf{Navigation}}   
+    & MN1 & 3 & Similar pages offer the same
+    type of interactions (e.g. itineries
+    are all structured with a list of events,
+    all venues show similar info such as
+    price, opening time, location...) & \\ \cmidrule{2-5} 
+    & MN2 & 3 & The top menu is always visible,
+    letting users to switch between
+    groups whenever they want &\\ \cmidrule{2-5} 
+    & MN3 & 2 & As said before with anchors, going
+    backwards to some parts of the same topic
+    requires the user to scroll all the way back up
+    (e.g. rent) &\\ \cmidrule{2-5} 
+    & MN4 & 2 & In rents if one clicks on "read more"
+    of a section, the bread crumps does not show
+    the general page for rents in order to go back.
+    For venues, an user can easily navigate to
+    other venues by going back to the "venues"
+    form page showed in the bread crump.
+    Additionally a section dedicated
+    to nearby and similar venues (you may also like)
+    is very helpful.
+    A similar section is present in
+    events' pages for upcoming events & Rents, Rents-tenancy, Castello Sforzesco, miart, Venues\\ \cmidrule{2-5} 
+    & MN5 & 2 & The only useful landmark is the one
+    that leads to the home page,
+    more landmarks could be added &\\ \midrule
+\textbf{Content}                       & MC1 & 1 & A lot of information overload in the menu
+and in some page anchors: the main
+features should be maintained on the top
+menu while putting the others in the footer.
+Even worse, another criticity is the
+absence of a link leading to the venues
+search page (a very important
+interaction page) in the top menu, while
+the same link is present in the footer only &  \\ \midrule
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & Contrast of colors with the text is well
+done (mostly black on white, if text
+on an image, the text is wrapped inside
+a box) and the
+text-size is appropriate & \\ \cmidrule{2-5} 
+    & MP2 & 3 & Icons are sometimes inconsistent
+    ("-" replaced by "x"),
+    but overall a lot of icons and
+    brief descriptive labels are used
+    that are pretty clear and coherent
+    in their functionality & \\ \cmidrule{2-5} 
+    & MP3 & 2 & There are some inconsistencies
+    in the labels ("read more", "find out more",
+    "see how", "discover how"...),
+    that are functionally the same
+    but worded differently & Rents\\ \cmidrule{2-5} 
+    & MP4 & 2 & Some horizontal lines could be more
+    marked to separate some parts within
+    the same page (e.g. in the list of events
+    of the month) &\\ \cmidrule{2-5} 
+    & MP5 & 3 & &
+\end{tabularx}
+
+Evaluator Name: Carlo L. Reinotti
+\begin{tabularx}{\linewidth}{c c X p{3cm}}
+    % \toprule
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
+    \\ \midrule
+    \endfirsthead
+    \toprule
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
+    \\ \midrule
+    \endhead
+    \midrule
+    \footnotesize [Continues on next page]
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    % body
+    H1 & 1 & Bread crumbs are not consistently used, since in certain pages they are missing. By using the research bar the website sometimes gives no feedback on the status of the process & Travel-info, Itineraries\\ \midrule
+    H2 & 2 & The language used is sufficiently clear, still there are some inconsistency in the terms used that are not necessary and might confuse the user. & Shopping-fashion, Rinascente \\ \midrule
+    H3 & 3 & No relevant issues were detected. & Restaurants, IH-Hotels\\ \midrule
+    H4 & 2 & Standards are proficiently used, nevertheless somethimes they have slightly unespected behaviour (for instance the plus icon that instead of showing more options leads to another page). In other pages index elements looks like links & Rinascente \\ \midrule
+    H5 & 3 & Getting to the wrong page is most of the time avoided by effective error prevention & Study\\ \midrule
+    H6 & 3 & The website provides sets of options in order to minimize the application of user's memory & Hotels\\ \midrule
+    H7 & 2 & Landmarks are present but could be improved in most of the pages by adding few more options. & Come-arrivare, Chiosetto\\ \midrule
+    H8 & 2 & Clear example of information overload, still this is an exeption which does not occur frequently & Universities\\ \midrule
+    H9 & 1 & By using the research bar the websites sometimes freezes without giving any kind of explanation or feedback on the status of the process & Homepage\\ \midrule
+    H10 & n/a & &
+\end{tabularx}
+    
+\begin{tabularx}{\linewidth}{l c c X p{3cm}}
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
+\midrule
+\endhead
+\midrule
+\footnotesize [Continues on next page]
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multirow{5}{*}{\textbf{Navigation}}   
+    & MN1 & 3 & The interaction capability is consistent between pages of the same type. Sometimes there is some minor differences but no relevant problem was detected. & Travel-info, Shopping-fashion \\ \cmidrule{2-5} 
+    & MN2 & 2 & Navigation between items of the same group is simple and encouraged. Nonetheless sometimes the classification of groups is not evident and that might create confusion & Venues\\ \cmidrule{2-5} 
+    & MN3 & 2 & Structural navigation sometimes is facilitated (as in the first link, where sections of the page are displayed with interactable lable on the top of the page) and sometimes it isn't (as in the second link, where an index of the contents is not available). & FAQ covid, events-month\\ \cmidrule{2-5} 
+    & MN4 & 2 & Suggestions are provided in order to let the user to switch between similar topics, still the possibility of coming back from a single topic to the previous one is not present & miart\\ \cmidrule{2-5} 
+    & MN5 & 1 & Landmarks are present and are sometimes well used as in the second link. In many pages though (such as the page displayed in the first link) landmarks are too little used & adi-design, Restaurants\\ \midrule
+\textbf{Content}                       & MC1 & 1 & There are some relevant cases of information overload. The index of the highlighted link is a clear example: for instance it would have been more suitable to group universities by field of studies & Universities  \\ \midrule
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size & adi-design \\ \cmidrule{2-5} 
+    & MP2 & 2 & The comment here is similar to H4. Still, there are some exeptions (one is the plus icon, as stated above)& Rinascente, Chiosetto\\ \cmidrule{2-5} 
+    & MP3 & 1 & Wording is sometimes inconsistent between labels of the same type & Shopping-fashion, Rinascente\\ \cmidrule{2-5} 
+    & MP4 & 1 & Relevant and useful feature of the website are almost hidden in the footer. Some of those functionalities are not reachable in other ways. & Itineraries \\ \cmidrule{2-5} 
+    & MP5 & 3 & Layout of similar pages is mostly the same across the whole website & adi-design, Castello Sforzesco
+\end{tabularx}
+
+Evaluator Name: Andrea Franchini
+\begin{tabularx}{\linewidth}{c c X p{3cm}}
+    % \toprule
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
+    \\ \midrule
+    \endfirsthead
+    \toprule
+    \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url}
+    \\ \midrule
+    \endhead
+    \midrule
+    \footnotesize [Continues on next page]
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    % body
+    H1 & ... & ... & ...\\ \midrule
+    H2 & .. & ... & ... \\ \midrule
+    H3 & ... &  & \\ \midrule
+    H4 & ... &  & \\ \midrule
+    H5 & ... &  & \\ \midrule
+    H6 & ... &  & \\ \midrule
+    H7 & ... &  & \\ \midrule
+    H8 & ... &  & \\ \midrule
+    H9 & ... &  & \\ \midrule
+    H10 & ... & &
+\end{tabularx}
+    
+\begin{tabularx}{\linewidth}{l c c X p{3cm}}
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
+\midrule
+\endhead
+\midrule
+\footnotesize [Continues on next page]
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multirow{5}{*}{\textbf{Navigation}}   
+    & MN1 & ... & ... & URL1 \\ \cmidrule{2-5} 
     & MN2 &  &  &\\ \cmidrule{2-5} 
     & MN3 &  &  &\\ \cmidrule{2-5} 
     & MN4 &  &  &\\ \cmidrule{2-5} 
     & MN5 &  &  &\\ \midrule
 \textbf{Content}                       & MC1 &  &  & URL1  \\ \midrule
-\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-5} 
-    & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-5} 
-    & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon\\ \cmidrule{2-5} 
-    & MP4 &  &  \\ \cmidrule{2-5} 
-    & MP5 &  &
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & ... & ... \\ \cmidrule{2-5} 
+    & MP2 & ... & ... & \\ \cmidrule{2-5} 
+    & MP3 & ... & ... & \\ \cmidrule{2-5} 
+    & MP4 &  &  &\\ \cmidrule{2-5} 
+    & MP5 &  & &
 \end{tabularx}
