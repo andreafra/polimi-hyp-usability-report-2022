@@ -115,13 +115,22 @@ To keep the inspection process straightforward, we agreed on evaluating the comp
 Since not all heuristics apply in all situations, we could also assign a ``N/A'' (``not applicable'') in such cases.
 
 \subsection{Execution of the study}
-% How the study was performed
+In order to identify a relevant subset of URLs of the website to analyze during the inspection, we agreed on proceeding in the following way:
+\begin{itemize}
+    \item we selected together the main functionalities of the website and identified relevant tasks related to them
+    \item for each task, we identified three to four URLs that might be involved in accomplishing the task    
+\end{itemize}
+Having defined a basic subset of URLs as stated above, we individually performed the inspection for each heuristic. We assigned a score and provided a short comment. \\
+It has to be noted that the subset of URLs was used as a common ground, but each inspector widened the spectrum of analysis as he considered appropriate.\\
+Finally, we discussed the results together and made a synthesis of our evaluation, agreeing on a final score for each heuristic.   
+
 
 \pagebreak
 
 \subsection{Results}
 Inspection was initially carried out individually by each evaluator. At the end of this first phase, a meeting was held in order to reach an agreed score for each heuristic.\\
-Below is a summary table grouping each heuristics into rows with their corresponding agreed score and comment.
+We report thre results in a summary table grouping each heuristics into rows with their corresponding agreed score and comment, more detailed comments for each heuristic with examples will be illustrated in the next section.\\
+It must be noticed that the final scores agreed on usually differed from the arithmetic mean: the level of disagreement over each topic (represented by the variance) was also considered. A graphical visualization is also provided, highlighting both the mean and the variance (Fig. \ref{BarsNielsenCrop} and Fig. \ref{BarsMileCrop}).
 
 \begin{tabularx}{\linewidth}{l c X}
 \toprule
@@ -139,18 +148,30 @@ Below is a summary table grouping each heuristics into rows with their correspon
 \endlastfoot
     % body
     H1 & 1 & There is a difficulty in navigation as breadcrumbs are sometimes either missing or incorrect.\par When using the search bar, there is no feedback on the progress status, the page can appear frozen. \\ \midrule
-    H2 &  & \\ \midrule
-    H3 &  & \\ \midrule
-    H4 &  & \\ \midrule
-    H5 &  & \\ \midrule
-    H6 &  & \\ \midrule
-    H7 &  & \\ \midrule
-    H8 &  & \\ \midrule
-    H9 &  & \\ \midrule
-    H10 &  &
+    H2 & 2 & Some visual and textual elements are confusing and do not match the real world in a proper way.\\ \midrule
+    H3 & 0 & If we consider only the main site, which mainly provides information, this heuristic is not applicable.\par Major problems can be found in the hotel subsection.\\ \midrule
+    H4 & 2 & Some icons and buttons don't follow certain conventions and there are cases in which they provide different functionalities across different pages, hence they are not even consistent.\\ \midrule
+    H5 & 2 & Error prevention is not always implemented, mainly in the newsletter subscription form and in the registration process suggestions are not always present.\\ \midrule
+    H6 & 3 & No major problems detected in this heuristic.\\ \midrule
+    H7 & 1 & Detected issues mainly related to landmarks, see MN5.\\ \midrule
+    H8 & 2 & Presence of an huge banner at the top of the pages is not a good design choice as it takes space from relevant information at its bottom.\\ \midrule
+    H9 & 2 & Helpful messages for error recognition are not always provided.\\ \midrule
+    H10 & N/A & Heuristic not applicable to the site
 \end{tabularx}
 
-\paragraph{MiLe}
+\begin{figure}[!ht]
+    \begin{minipage}{\linewidth}
+        \centering
+        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsNielsenCrop.png}}%
+        \captionsetup{justification=centering}
+        \caption{Nielsen's heuristics evaluation summary}
+        \label{BarsNielsenCrop}
+    \end{minipage}
+\end{figure}
+
+%\paragraph{MiLe}
+
+\pagebreak
 
 \begin{tabularx}{\linewidth}{l c c X}
 \toprule
@@ -167,33 +188,18 @@ Below is a summary table grouping each heuristics into rows with their correspon
 \bottomrule
 \endlastfoot
 
-\multirow{5}{*}{\textbf{Navigation}}   & MN1 & 0 & Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum \\ \cmidrule{2-4} 
-                                        & MN2 &  &  \\ \cmidrule{2-4} 
-                                        & MN3 &  &  \\ \cmidrule{2-4} 
-                                        & MN4 &  &  \\ \cmidrule{2-4} 
-                                        & MN5 &  &  \\ \midrule
-\textbf{Content}                       & MC1 &  &  \\ \midrule
-\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size \\ \cmidrule{2-4} 
-                                        & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects\\ \cmidrule{2-4} 
-                                        & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon\\ \cmidrule{2-4} 
-                                        & MP4 & 1 & Some critical and useful information and links are allocated in in a bad way\\ \cmidrule{2-4} 
-                                        & MP5 & 3 & No major problems, pages of the same type have the same layous
+\multirow{5}{*}{\textbf{Navigation}}   & MN1 & 3 & Similar pages have the same type of layout, links and interaction capabilities\\ \cmidrule{2-4} 
+                                        & MN2 & 3 & Navigation from a group to its items is quite easy, while the opposite is not always possible.\\ \cmidrule{2-4} 
+                                        & MN3 & 2 & Many pages force the user to scroll back to the top of the page in order to use the page anchors for structural navigation.\\ \cmidrule{2-4} 
+                                        & MN4 & 2 & Navigating from a topic to a related one is easy, but navigating backward is not possible unless through the browser's back arrow.\\ \cmidrule{2-4} 
+                                        & MN5 & 1 & Major problems with the landmarks, mostly presence of useless ones and absence of more useful kinds.\\ \midrule
+\textbf{Content}                       & MC1 & 1 & Critical information overload in certain pages \\ \midrule
+\multirow{5}{*}{\textbf{Presentation}} & MP1 & 3 & The text is always readable and of the appropriate size. \\ \cmidrule{2-4} 
+                                        & MP2 & 2 & Some labels and and icons are not expressive enough and do not reflect the meaning of the interaction and its effects.\\ \cmidrule{2-4} 
+                                        & MP3 & 2 & Some interactive elements are inconsistent in terms of wording and icon.\\ \cmidrule{2-4} 
+                                        & MP4 & 1 & Some critical and useful information and links are allocated in in a bad way.\\ \cmidrule{2-4} 
+                                        & MP5 & 3 & No major problems, pages of the same type have the same layous.
 \end{tabularx}
-
-\pagebreak
-
-The final scores agreed on usually differed from the arithmetic mean: the level of disagreement over each topic (represented by the variance) was also considered.\\
-We provide the results also in a graphical visualization, highlighting both the arithmetic mean and the variance (Fig \ref{BarsNielsenCrop} and Fig \ref{BarsMileCrop}).
-
-\begin{figure}[!ht]
-    \begin{minipage}{\linewidth}
-        \centering
-        \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/BarsNielsenCrop.png}}%
-        \captionsetup{justification=centering}
-        \caption{Nielsen's heuristics evaluation summary}
-        \label{BarsNielsenCrop}
-    \end{minipage}
-\end{figure}
 
 \begin{figure}[!ht]
     \begin{minipage}{\linewidth}
@@ -205,7 +211,9 @@ We provide the results also in a graphical visualization, highlighting both the 
     \end{minipage}
 \end{figure}
 
-Mean values by content, navigation and presentation heuristics are provided in Fig \ref{BarsAggregated}.\\
+\pagebreak
+
+Finally, mean values by content, navigation and presentation heuristics are provided in Fig. \ref{BarsAggregated}.\\
 There is an overall consensus that the website presents major problems on the content part. Explanations will be tackled in the next sections. 
 
 \begin{figure}[!ht]
@@ -217,8 +225,6 @@ There is an overall consensus that the website presents major problems on the co
         \label{BarsAggregated}
     \end{minipage}
 \end{figure}
-
-\pagebreak
 
 \subsection{Discussion of results}
 \subsubsection{Discussion within Nielsen's heuristics}
@@ -313,9 +319,9 @@ There is an overall consensus that the website presents major problems on the co
 
     \begin{figure}[!ht]
         \centering
-        \subfloat[\centering "Explore" page]{{\includegraphics[width=7cm]{images/MN2-1.png} }}%
+        \subfloat[][\centering "Explore" page]{{\includegraphics[width=7cm]{images/MN2-1.png} }}%
         \qquad
-        \subfloat[\centering Hotel details page]{{\includegraphics[width=7cm]{images/MN2-2.png} }}%
+        \subfloat[][\centering Hotel details page]{{\includegraphics[width=7cm]{images/MN2-2.png} }}%
         \caption{YesMilano Hotes issue with navigation from (b) to (a). To get back the user need to click on the Explore in the header to get back to the hotel list page, which is not obvious.}%
         \label{fig:MN2-1}%
     \end{figure}
@@ -338,7 +344,7 @@ There is an overall consensus that the website presents major problems on the co
     \item \textbf{MC1 Information Overload}
     While most of the website usually presents its contents in a relatively clean way with little bloat, certain pages present their content in a poorly formatted manner. 
     For example, the page that lists universities has a confusing list of links that point to parts of the page, and items like the one in Fig. \ref{fig:MC1-2}, when replicated many times make the page too long.
-    While there are sections that present many information in well-organized manner (e.g.: the Coronavirus FAQ page) there are some that present their content with poorly formatted text (e.g.: the "Subway, Trams and Buses" page), as shown in Fig. \ref{fig:MC1-2}.
+    While there are sections that present many information in well-organized manner (e.g.: the Coronavirus FAQ page) there are some that present their content with poorly formatted text (e.g.: the "Subway, Trams and Buses" page), as shown in Fig. \ref{fig:MC1-3}.
 
 
     \begin{figure}[!ht]
@@ -355,11 +361,11 @@ There is an overall consensus that the website presents major problems on the co
       
     \begin{figure}[!ht]
         \centering
-        \subfloat[\centering Coronavirus FAQ page]{{\includegraphics[width=7cm]{images/MC1-4.png} }}%
+        \subfloat[][\centering Coronavirus FAQ page]{{\includegraphics[width=7cm]{images/MC1-4.png} }}%
         \qquad
-        \subfloat[\centering Subway, Trams and Buses]{{\includegraphics[width=7cm]{images/MC1-3.png} }}%
+        \subfloat[][\centering Subway, Trams and Buses]{{\includegraphics[width=7cm]{images/MC1-3.png} }}%
         \caption{The page on the left make adequate use of heading, lists and different text formatting to highlight different sections of the text, while the page on the right does not.}%
-        \label{fig:MC1-2}%
+        \label{fig:MC1-3}%
     \end{figure}
 
 
@@ -388,7 +394,7 @@ There is an overall consensus that the website presents major problems on the co
         \end{figure}
     \item \textbf{MP3 Interaction placeholders-consistency}\\
         Some minor problems were found in this heuristic:
-        a number of icons are used with multiple meanings (for example the "+" sometimes expands a paragraph section, other times it leads to a new page like in Fig \ref{MP2-1}), and many interactive labels providing the same functionalities are named differently across the same page (Fig \ref{MP3-1} and Fig \ref{MP3-2}).
+        a number of icons are used with multiple meanings (for example the "+" sometimes expands a paragraph section, other times it leads to a new page like in Fig \ref{MP2-1}), and many interactive labels providing the same functionalities are named differently across the same page (Fig. \ref{MP3-1} and Fig. \ref{MP3-2}).
         \begin{figure}[!ht]
             \begin{minipage}{\linewidth}
                 \centering
@@ -409,8 +415,8 @@ There is an overall consensus that the website presents major problems on the co
         \end{figure}
         \pagebreak
     \item \textbf{MP4 Spatial allocation}\\
-        The overall allocation of elements in each page is good, but a critical aspect lowered the score: the venues form page through which the user can retrieve venues through various filters has an anchor in the footer only ("All the venues", Fig \ref{MP4-1}). Given the importance of such page, the lack of a link in the top menu is a major problem that even affects the navigation.\\
-        Other problems are the positioning of the partners logos and links which precede the more important footer links (Fig \ref{MP4-1})), and the placing of the anchors leading to sections of the same page (Fig \ref{MP4-2}): as their role is simplifying navigation, allocating them at the top of the page only is not very appropriate as the user is forced to scroll all the way back to the top just to change section.
+        The overall allocation of elements in each page is good, but a critical aspect lowered the score: the venues form page through which the user can retrieve venues through various filters has an anchor in the footer only ("All the venues", Fig. \ref{MP4-1}). Given the importance of such page, the lack of a link in the top menu is a major problem that even affects the navigation.\\
+        Other problems are the positioning of the partners logos and links which precede the more important footer links (Fig. \ref{MP4-1})), and the placing of the anchors leading to sections of the same page (Fig. \ref{MP4-2}): as their role is simplifying navigation, allocating them at the top of the page only is not very appropriate as the user is forced to scroll all the way back to the top just to change section.
         \begin{figure}[!ht]
             \begin{minipage}{\linewidth}
                 \centering
@@ -433,6 +439,3 @@ There is an overall consensus that the website presents major problems on the co
         We didn't detect major problems in this aspect, pages of the same type have the same layout.\\
         For example, all venues' pages have a brief initial paragraph describing the attraction, a middle section with various useful information like contancts, schedule and pricing, and finally a final part of the page is dedicated to suggestions. 
 \end{itemize}
-
-\pagebreak
-Commento
