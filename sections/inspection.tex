@@ -230,24 +230,46 @@ There is an overall consensus that the website presents major problems on the co
 \subsubsection{Discussion within Nielsen's heuristics}
 \begin{itemize}
     \item \textbf{H1 Visibility of system status}\\
-    Commento su heuristic (Figura \ref{fig:1-image-ref})
-    \begin{figure}[!ht]
-        \begin{minipage}{\linewidth}
-            \centering
-            \captionsetup{justification=centering}
-            \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{images/test.png}}%
-            \caption{Label dell'immagine}
-            \label{fig:1-image-ref}
-        \end{minipage}
-    \end{figure}
+        The orientational information of the website is often incomplete or misleading. This is mainly due to the inconsistent use of bread crumbs, which are sometimes missing.\\
+        We also found out that depending on the navigation history, bread crumbs might be incorrect as well, since they are not sufficiently dynamic. An example of this issue is the fact that we reached the page in figure H1 - 1 from the home page but the bread crumbs are erroneous.\\
+        Another issue is related to the search bar provided as a landmark. The system does not provide feedback on the status of the research process. In fact, the page looks frozen and this might lead the user to reload the page.\\
+        Figure H1 - 1 (Alessio): An example of incorrect breadcrumbs\\
+        Figure H1 - 2 (Alessio): The research bar of the website
+    \item \textbf{H2 Match between system and the real world}
+        Regarding the match between the system and the real world, the heuristic is generally satisfied. Visual representations for specific sections are quite effective (e.g. showing pictures of art exhibitions as thumbnails for the art section in the home page, the picture of a student for the study section). However, minor inconsistencies were detected, such as:
+        \begin{itemize}
+            \item the presence of topic-unrelated pictures in the Coronavirus Info page (see figure H2 - 1)
+            \item in Castello Sforzesco's page some search words in the top section of the page are not related to the content of the page itself (e.g. top/my first trip to Milano is not related to Castello Sforzesco in the real world)
+        \end{itemize}
+        Figure H2 - 1 (Alessio): The content of a page and the image used are unrelated
+    \item \textbf{H3 User control and freedom}\\
+        For most of the pages of the website this heuristic can be considered as not applicable, since the main purpose of the website is to provide information. The support of undo and redo operations is almost never required.\\
+        Still, one issue was detected in the hotel section: when the user inserts the information required in order to book a room (such as the number of guests, etc.) the user is redirected to another page, with no possibility to modify those parameters without having to reload the previous page (and by doing so, refill all the parameters).
+    \item \textbf{H4 Consistency and standards}\\
+        The website is generally consistent and follows standards with the proficient use of icons (see Figure H4 - 1). We identified some minor issues:
+        \begin{itemize}
+            \item sometimes a "plus" button (figure H4 - 2) is used but it has an unexpected behavior: it should extend the number of items shown whereas it redirects the user to another page
+            \item "-" and "x" symbols are both use to compress contents
+            \item in some pages (e.g. Coronavirus FAQ) some icons are clickable but don't perform anything (such as the contacts icon)
+            \item in some specific restaurant pages two different icons for reservation are used
+            \item in some pages the table of content/index is not following a standard style but is centered at the top of the page, as shown in Figure (H4 - 3)
+        \end{itemize}
+        Figure H4 - 1 (Carlo's screenshot 4): An example of good use of conventions\\        
+        Figure H4 - 2 (Carlo's screenshot 11): A "plus" icon with unexpected behavior\\
+        Figure H4 - 3 (Carlo's screenshot 13): Table of contents that does not follow a standard    
+    \item \textbf{H5 Error prevention}\\
+        Regarding error prevention, two minor problems were detected.\\
+        The first is the fact that in the newsletter form, the table reservation form and the research bar the user is not informed by a warning about the fact that some fields are blank. This might lead the user to proceed with the form with missing inputs.
+        The second is that in the student registration no suggestion is provided in case of an email written with a missing "@".\\        
+        For what concerns the overall website, getting to the wrong page is most of the time avoided by meaningful link labels.
     \item \textbf{H6 Recognition rather than recall}\\
-    This heuristic is fully satisfied in fact all the search forms suggest options for recognition.
+        This heuristic is fully satisfied in fact all the search forms suggest options for recognition.
     \item \textbf{H7 Flexibility and efficiency of use}\\
-    ???
+        ???
     \item \textbf{H8 Aesthetic and minimalist design}\\
-    Often, at the beginning of a page there's a big and useless image, thus requiring the user to scroll down in order to access some useful content. (See Fig. \ref{H8-1})\\
-    In the page about the universities in Milan, there are very big images that could have been smaller. In fact it's difficult to have a good grasp of all the content, since lots of scrolling is needed. (See Fig. \ref{H8-2})
-\begin{figure}[!ht]
+        Often, at the beginning of a page there's a big and useless image, thus requiring the user to scroll down in order to access some useful content. (See Fig. \ref{H8-1})\\
+        In the page about the universities in Milan, there are very big images that could have been smaller. In fact it's difficult to have a good grasp of all the content, since lots of scrolling is needed. (See Fig. \ref{H8-2})
+        \begin{figure}[!ht]
             \begin{minipage}{\linewidth}
                 \centering
                 \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H8-1.png}}%
@@ -255,120 +277,115 @@ There is an overall consensus that the website presents major problems on the co
                 \caption{}
                 \label{H8-1}
             \end{minipage}
-\end{figure}
-\begin{figure}[!ht]
-    \begin{minipage}{\linewidth}
-        \centering
-        \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H8-2.png}}%
-        \captionsetup{justification=centering}
-        \caption{}
-        \label{H8-2}
-    \end{minipage}
-\end{figure}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H8-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{}
+                \label{H8-2}
+            \end{minipage}
+        \end{figure}
     \item \textbf{H9 Help users recognize, diagnose and recover from errors}\\
-    In the hotels page, if the geolocalization service fails, the website gives a not helpful error message (See Fig. \ref{H9-1}). Instead in the restaurants page, the same error gives to the user instructions about what to do. (See Fig. \ref{H9-2})\\
-    When signing up for the newsletter, if the user first checks the checkbox then no error is shown for leaving the email field blank.\\
-    The 404 error message is nicely designed. (See Fig. \ref{H9-3})\\
-    The user form registration gives good error feedback. (See Fig. \ref{H9-4})
-\begin{figure}[!ht]
-        \begin{minipage}{\linewidth}
-            \centering
-            \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-1.png}}%
-            \captionsetup{justification=centering}
-            \caption{}
-            \label{H9-1}
-        \end{minipage}
-\end{figure}
-\begin{figure}[!ht]
-\begin{minipage}{\linewidth}
-    \centering
-    \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-2.png}}%
-    \captionsetup{justification=centering}
-    \caption{}
-    \label{H9-2}
-\end{minipage}
-\end{figure}\begin{figure}[!ht]
-    \begin{minipage}{\linewidth}
-        \centering
-        \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-3.png}}%
-        \captionsetup{justification=centering}
-        \caption{}
-        \label{H9-3}
-    \end{minipage}
-\end{figure}
-\begin{figure}[!ht]
-\begin{minipage}{\linewidth}
-\centering
-\makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-4.png}}%
-\captionsetup{justification=centering}
-\caption{}
-\label{H9-4}
-\end{minipage}
-\end{figure}
+        In the hotels page, if the geolocalization service fails, the website gives a not helpful error message (See Fig. \ref{H9-1}). Instead in the restaurants page, the same error gives to the user instructions about what to do. (See Fig. \ref{H9-2})\\
+        When signing up for the newsletter, if the user first checks the checkbox then no error is shown for leaving the email field blank.\\
+        The 404 error message is nicely designed. (See Fig. \ref{H9-3})\\
+        The user form registration gives good error feedback. (See Fig. \ref{H9-4})
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{}
+                \label{H9-1}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{}
+                \label{H9-2}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-3.png}}%
+                \captionsetup{justification=centering}
+                \caption{}
+                \label{H9-3}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H9-4.png}}%
+                \captionsetup{justification=centering}
+                \caption{}
+                \label{H9-4}
+            \end{minipage}
+        \end{figure}
     \item \textbf{H10 Help and documentation}\\
-    N/A
+        N/A
 \end{itemize}
+
 \pagebreak
+
 \subsubsection{Discussion within MiLe's heuristics}
 \begin{itemize}
     \item \textbf{MN1 Interaction consistency}\\
-    Similar pages have the same type of layout, links and interaction capabilities. Minor differences might be present, however they are not relevant.
-
+        Similar pages have the same type of layout, links and interaction capabilities. Minor differences might be present, however they are not relevant.
     \item \textbf{MN2 Group Navigation}
-    In general, it's quite easy to navigate from a group (often a grid or list) to one of its items. The opposite is usually possible through breadcrumbs, although in certain parts of the website (i.e. YesMilano Hotels, Fig. \ref{fig:MN2-1}) there's no way to get back to the group page.
-
-    \begin{figure}[!ht]
-        \centering
-        \subfloat[][\centering "Explore" page]{{\includegraphics[width=7cm]{images/MN2-1.png} }}%
-        \qquad
-        \subfloat[][\centering Hotel details page]{{\includegraphics[width=7cm]{images/MN2-2.png} }}%
-        \caption{YesMilano Hotes issue with navigation from (b) to (a). To get back the user need to click on the Explore in the header to get back to the hotel list page, which is not obvious.}%
-        \label{fig:MN2-1}%
-    \end{figure}
-
+        In general, it's quite easy to navigate from a group (often a grid or list) to one of its items. The opposite is usually possible through breadcrumbs, although in certain parts of the website (i.e. YesMilano Hotels, Fig. \ref{fig:MN2-1}) there's no way to get back to the group page.
+        \begin{figure}[!ht]
+            \centering
+            \subfloat[][\centering "Explore" page]{{\includegraphics[width=7cm]{images/MN2-1.png} }}%
+            \qquad
+            \subfloat[][\centering Hotel details page]{{\includegraphics[width=7cm]{images/MN2-2.png} }}%
+            \caption{YesMilano Hotes issue with navigation from (b) to (a). To get back the user need to click on the Explore in the header to get back to the hotel list page, which is not obvious.}%
+            \label{fig:MN2-1}%
+        \end{figure}
     \item \textbf{MN3 Structural Navigation}
-    Navigation between parts of a topic could have been better: many pages have a list of same-page links at their top, thus requiring users to scroll back to the top if they want to find a specific section quickly. 
+        Navigation between parts of a topic could have been better: many pages have a list of same-page links at their top, thus requiring users to scroll back to the top if they want to find a specific section quickly. 
 
-    \begin{figure}[!ht]
-        \includegraphics[width=\linewidth]{images/MN3-1.png}
-        \caption{From the "Rents" page; the page is quite long and each link points to a section of the page.}
-        \label{fig:MN3-1}
-    \end{figure}
-      
+        \begin{figure}[!ht]
+            \includegraphics[width=\linewidth]{images/MN3-1.png}
+            \caption{From the "Rents" page; the page is quite long and each link points to a section of the page.}
+            \label{fig:MN3-1}
+        \end{figure} 
     \item \textbf{MN4 Semantic Navigation}
-    While it's easy to navigate to related topics thanks to the "You may also like" section of relevant pages, it's not possible to navigate backward to recently visited pages.
-
+        While it's easy to navigate to related topics thanks to the "You may also like" section of relevant pages, it's not possible to navigate backward to recently visited pages.
     \item \textbf{MN5 Landmarks}
-    ???
-    
+        ???    
     \item \textbf{MC1 Information Overload}
-    While most of the website usually presents its contents in a relatively clean way with little bloat, certain pages present their content in a poorly formatted manner. 
-    For example, the page that lists universities has a confusing list of links that point to parts of the page, and items like the one in Fig. \ref{fig:MC1-2}, when replicated many times make the page too long.
-    While there are sections that present many information in well-organized manner (e.g.: the Coronavirus FAQ page) there are some that present their content with poorly formatted text (e.g.: the "Subway, Trams and Buses" page), as shown in Fig. \ref{fig:MC1-3}.
+        While most of the website usually presents its contents in a relatively clean way with little bloat, certain pages present their content in a poorly formatted manner. 
+        For example, the page that lists universities has a confusing list of links that point to parts of the page, and items like the one in Fig. \ref{fig:MC1-2}, when replicated many times make the page too long.
+        While there are sections that present many information in well-organized manner (e.g.: the Coronavirus FAQ page) there are some that present their content with poorly formatted text (e.g.: the "Subway, Trams and Buses" page), as shown in Fig. \ref{fig:MC1-3}.
 
 
-    \begin{figure}[!ht]
-        \includegraphics[width=\linewidth]{images/MC1-1.png}
-        \caption{The university page list of links.}
-        \label{fig:MC1-1}
-    \end{figure}
-    \begin{figure}[!ht]
-        \centering
-        \includegraphics[width=0.7\linewidth]{images/MC1-2.png}
-        \caption{An example of an entry of the list of universities.}
-        \label{fig:MC1-2}
-    \end{figure}
-      
-    \begin{figure}[!ht]
-        \centering
-        \subfloat[][\centering Coronavirus FAQ page]{{\includegraphics[width=7cm]{images/MC1-4.png} }}%
-        \qquad
-        \subfloat[][\centering Subway, Trams and Buses]{{\includegraphics[width=7cm]{images/MC1-3.png} }}%
-        \caption{The page on the left make adequate use of heading, lists and different text formatting to highlight different sections of the text, while the page on the right does not.}%
-        \label{fig:MC1-3}%
-    \end{figure}
-
-
+        \begin{figure}[!ht]
+            \includegraphics[width=\linewidth]{images/MC1-1.png}
+            \caption{The university page list of links.}
+            \label{fig:MC1-1}
+        \end{figure}
+        \begin{figure}[!ht]
+            \centering
+            \includegraphics[width=0.7\linewidth]{images/MC1-2.png}
+            \caption{An example of an entry of the list of universities.}
+            \label{fig:MC1-2}
+        \end{figure}
+        
+        \begin{figure}[!ht]
+            \centering
+            \subfloat[][\centering Coronavirus FAQ page]{{\includegraphics[width=7cm]{images/MC1-4.png} }}%
+            \qquad
+            \subfloat[][\centering Subway, Trams and Buses]{{\includegraphics[width=7cm]{images/MC1-3.png} }}%
+            \caption{The page on the left make adequate use of heading, lists and different text formatting to highlight different sections of the text, while the page on the right does not.}%
+            \label{fig:MC1-3}%
+        \end{figure}
     \item \textbf{MP1 Text lay out}\\
         We haven't found any critical aspect, the text is always readable and of the appropriate size.\\
     \item \textbf{MP2 Interaction placeholders-semiotics}\\
