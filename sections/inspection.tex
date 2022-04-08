@@ -231,32 +231,81 @@ There is an overall consensus that the website presents major problems on the co
 \begin{itemize}
     \item \textbf{H1 Visibility of system status}\\
         The orientational information of the website is often incomplete or misleading. This is mainly due to the inconsistent use of bread crumbs, which are sometimes missing.\\
-        We also found out that depending on the navigation history, bread crumbs might be incorrect as well, since they are not sufficiently dynamic. An example of this issue is the fact that we reached the page in figure H1 - 1 from the home page but the bread crumbs are erroneous.\\
-        Another issue is related to the search bar provided as a landmark. The system does not provide feedback on the status of the research process. In fact, the page looks frozen and this might lead the user to reload the page.\\
-        Figure H1 - 1 (Alessio): An example of incorrect breadcrumbs\\
-        Figure H1 - 2 (Alessio): The research bar of the website
+        We also found out that depending on the navigation history, bread crumbs might be incorrect as well, since they are not sufficiently dynamic. An example of this issue is the fact that we reached the page in Fig. \ref{H1-1} from the home page but the bread crumbs are erroneous.\\
+        Another issue is related to the search bar provided as a landmark. The system does not provide feedback on the status of the research process. In fact, the page looks frozen and this might lead the user to reload the page (Fig. \ref{H1-2}).\\
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=0.5\textwidth]{images/H1-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{An example of incorrect breadcrumbs.}
+                \label{H1-1}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/H1-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{The page is loading but it appears to be frozen.}
+                \label{H1-2}
+            \end{minipage}
+        \end{figure}
+    \pagebreak
     \item \textbf{H2 Match between system and the real world}
         Regarding the match between the system and the real world, the heuristic is generally satisfied. Visual representations for specific sections are quite effective (e.g. showing pictures of art exhibitions as thumbnails for the art section in the home page, the picture of a student for the study section). However, minor inconsistencies were detected, such as:
         \begin{itemize}
-            \item the presence of topic-unrelated pictures in the Coronavirus Info page (see figure H2 - 1)
+            \item the presence of topic-unrelated pictures in the Coronavirus Info page (see Fig. \ref{H2-1})
             \item in Castello Sforzesco's page some search words in the top section of the page are not related to the content of the page itself (e.g. top/my first trip to Milano is not related to Castello Sforzesco in the real world)
         \end{itemize}
-        Figure H2 - 1 (Alessio): The content of a page and the image used are unrelated
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/H2-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{The content of a page and the image used are unrelated.}
+                \label{H2-1}
+            \end{minipage}
+        \end{figure}
     \item \textbf{H3 User control and freedom}\\
         For most of the pages of the website this heuristic can be considered as not applicable, since the main purpose of the website is to provide information. The support of undo and redo operations is almost never required.\\
         Still, one issue was detected in the hotel section: when the user inserts the information required in order to book a room (such as the number of guests, etc.) the user is redirected to another page, with no possibility to modify those parameters without having to reload the previous page (and by doing so, refill all the parameters).
     \item \textbf{H4 Consistency and standards}\\
-        The website is generally consistent and follows standards with the proficient use of icons (see Figure H4 - 1). We identified some minor issues:
+        The website is generally consistent and follows standards with the proficient use of icons (see Fig. \ref{H4-1}). We identified some minor issues:
         \begin{itemize}
-            \item sometimes a "plus" button (figure H4 - 2) is used but it has an unexpected behavior: it should extend the number of items shown whereas it redirects the user to another page
+            \item sometimes a "+" button (Fig. \ref{H4-2}) is used but it has an unexpected behavior: it should extend the number of items shown whereas it redirects the user to another page
             \item "-" and "x" symbols are both use to compress contents
             \item in some pages (e.g. Coronavirus FAQ) some icons are clickable but don't perform anything (such as the contacts icon)
             \item in some specific restaurant pages two different icons for reservation are used
-            \item in some pages the table of content/index is not following a standard style but is centered at the top of the page, as shown in Figure (H4 - 3)
+            \item in some pages the table of content/index is not following a standard style but is centered at the top of the page, as shown in Fig. \ref{H4-3}
         \end{itemize}
-        Figure H4 - 1 (Carlo's screenshot 4): An example of good use of conventions\\        
-        Figure H4 - 2 (Carlo's screenshot 11): A "plus" icon with unexpected behavior\\
-        Figure H4 - 3 (Carlo's screenshot 13): Table of contents that does not follow a standard    
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/H4-1.png}}%
+                \captionsetup{justification=centering}
+                \caption{An example of good use of conventions.}
+                \label{H4-1}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/H4-2.png}}%
+                \captionsetup{justification=centering}
+                \caption{A "+" icon with unexpected behavior.}
+                \label{H4-2}
+            \end{minipage}
+        \end{figure}
+        \begin{figure}[!ht]
+            \begin{minipage}{\linewidth}
+                \centering
+                \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/H4-3.png}}%
+                \captionsetup{justification=centering}
+                \caption{Table of contents that does not follow a standar.}
+                \label{H4-3}
+            \end{minipage}
+        \end{figure} 
     \item \textbf{H5 Error prevention}\\
         Regarding error prevention, two minor problems were detected.\\
         The first is the fact that in the newsletter form, the table reservation form and the research bar the user is not informed by a warning about the fact that some fields are blank. This might lead the user to proceed with the form with missing inputs.
