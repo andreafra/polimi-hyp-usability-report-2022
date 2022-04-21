@@ -16,6 +16,7 @@
 %
 In this sections there are the results of each inspector.
 
+\begin{small}
 
 \subsection{Evaluator: Alessio}
 \begin{tabularx}{\linewidth}{c c X p{3cm}}
@@ -202,18 +203,18 @@ text-size is appropriate & \\ \cmidrule{2-5}
     \bottomrule
     \endlastfoot
     % body
-    H1 & ... & ... & ...\\ \midrule
-    H2 & .. & ... & ... \\ \midrule
-    H3 & ... &  & \\ \midrule
-    H4 & ... &  & \\ \midrule
-    H5 & ... &  & \\ \midrule
-    H6 & ... &  & \\ \midrule
-    H7 & ... &  & \\ \midrule
-    H8 & ... &  & \\ \midrule
-    H9 & ... &  & \\ \midrule
-    H10 & ... & &
+    H1 & 2 & The website is inconsistent in establishing the application status: most pages about a topic have breadcrumbs, but some pages with groups of topics do not. It's also not clear whether the website is loading search results, as the loading symbol is displayed at the bottom of the page with poor visibility. & Homepage, Itineraries, "La Rinascente" \\ \midrule
+    H2 & 2 & Most of the website adopts words that a visitor to Milan could use, albeit some are misleading or change meaning between the English and Italian website (``Book now'' has a different meaning than ``Scopri come prenotare''). Pages such \emph{Arriving and Getting Around} follow a logical order in presenting their content (e.g.: ``Arriving`` section is before ``Getting Around''). & Homepage, Arriving and Getting Around \\ \midrule
+    H3 & 2 & Most of the website doesn't let user perform actions beside navigating topics. It's easy to input queries that lead to no results in the Restaurant and Hotels sections of the website, and changing the query  resets the progress. & Hotels, Restaurants\\ \midrule
+    H4 & 2 & While the style of most visual elements is consistent, links have ofter different styles (underlined, with an arrow at the end, in a box) whose use feels arbitrary, especially regarding external links. Both hotels and restaurant website have a completely different visual style. & Universities, ``Castello Sforzesco''\\ \midrule
+    H5 & 1 & The form to subscribe to the newsletter only checks for email correctness after clicking the button. It's possible to get a ``You've been banned'' message on the Hotels and Restaurant section, which doesn't really work (refreshing the pages solves it), but prevents using the website for that session. & Homepage, Restaurants, Hotels \\ \midrule
+    H6 & 3 & The website doesn't have any option to choose at all, and in forms (mostly on the Hotels and Restaurant sections) all possible options are listed below the input field. & Restaurants, Hotels  \\ \midrule
+    H7 & 2 & The website doesn't have many accelerators: footer links, althought not as easily accessible, allow experienced users to quickly find relevant informations. The search button is useful and always present but it's quite slow. & N/A \\ \midrule
+    H8 & 3 & The website has a modern and clean design, with good contrast. The only issue is the presentation of links which often are listed inline. & (e.g.) Arriving and Getting Around \\ \midrule
+    H9 & 1 & While 404 pages on the main website presents links to get back to the website, hotels and restaurants sections have an unrecoverable ``You've been banned'' message. On the main website, the registration form for students explains clearly which fields have issues. & Hotels, Restaurants, Student registration \\ \midrule
+    H10 & N/A & N/A & N/A
 \end{tabularx}
-    
+ 
 \begin{tabularx}{\linewidth}{l c c X p{3cm}}
 \toprule
 \textbf{Category} & \textbf{Heuristic} & \textbf{Score} & \textbf{Comment} & \textbf{Page Url} \\
@@ -230,17 +231,18 @@ text-size is appropriate & \\ \cmidrule{2-5}
 \endlastfoot
 
 \multirow{5}{*}{\textbf{Navigation}}   
-    & MN1 & ... & ... & URL1 \\ \cmidrule{2-5} 
-    & MN2 &  &  &\\ \cmidrule{2-5} 
-    & MN3 &  &  &\\ \cmidrule{2-5} 
-    & MN4 &  &  &\\ \cmidrule{2-5} 
-    & MN5 &  &  &\\ \midrule
-\textbf{Content}                       & MC1 &  &  & URL1  \\ \midrule
-\multirow{5}{*}{\textbf{Presentation}} & MP1 & ... & ... \\ \cmidrule{2-5} 
-    & MP2 & ... & ... & \\ \cmidrule{2-5} 
-    & MP3 & ... & ... & \\ \cmidrule{2-5} 
-    & MP4 &  &  &\\ \cmidrule{2-5} 
-    & MP5 &  & &
+    & MN1 & 3 & Pages that show a group of topics have a distinct grid of boxes that easily differentiate the purpose of those pages with respect to the one about a topic. Pages about a topic are usually made by the same set of elements (carousels, panels, expandable text boxes). & (e.g.) Itineraries, ``La Rinascente'', ``Castello Sforzesco'' \\ \cmidrule{2-5} 
+    & MN2 & 2 & While it's easy to navigate from a group to its single items, it's not always possible to navigate back to the group, since the only way to do it is through breadcrumbs. & (e.g.) ``La Rinascente'', ``Castello Sforzesco'' \\ \cmidrule{2-5} 
+    & MN3 & 3 & Sections are well differentiated, and the panels accessible through the buttons (Map, Video, Info and Services, Contacts) are fairly intuitive. Longer pages often have a summary of topics at the top of page, which unfortunately isn't a sticky element. & (e.g.) ``La Rinascente'', Rents \\ \cmidrule{2-5} 
+    & MN4 & 2 & It's easy to navigate to related topic through the carousels at the bottom of a topic page, but it's not possible to navigate back since the website doesn't hold the user navigation history. & (e.g.) ``La Rinascente'' \\ \cmidrule{2-5} 
+    & MN5 & 2 & The user login button is not very useful since it doesn't have any useful feature associated with it. Other elements in the header are relatively useful. On a desktop computer it would have been better to have at list the main topics of the menu listed in the header. Hotels and Restaurants have useful landmark in the header. & N/A \\ \midrule 
+\textbf{Content}                       & MC1 & 3 & Most of the information on the website is well balanced and relevant. & N/A \\ \midrule
+\multirow{5}{*}{\textbf{Presentation}}
+    & MP1 & 3 & Text size is well readable and the constrast is sufficient. & N/A \\ \cmidrule{2-5} 
+    & MP2 & 3 & Most label convey their meaning, albeit some link labels are unnecessarily varied (``Discover'', ``Explore'', ``Visit''). It's not always clear when a link points to an external website. & (e.g.) Itinieraries \\ \cmidrule{2-5} 
+    & MP3 & 2 & There is unnecessary variety between certain labels: some have an arrow at the end, some are underlined. Labels that mark other topics are consistent (on a white background). & Rents, Arriving and Getting Around\\ \cmidrule{2-5} 
+    & MP4 & 2 & Most elements are well positioned, except for the group of links at the top of long pages, which is hard to read and requires the user to scroll back at each to quickly find a topic section. & (e.g.) Universities \\ \cmidrule{2-5} 
+    & MP5 & 3 & Group pages have a consistent grid layout. Topic pages are more varied, but the order is usually the same, with a carousel of related topic at the end. Certain section of the website also have a different accent color (e.g. Study is blue, while most of the website is yellow). & Study
 \end{tabularx}
 
 \pagebreak
@@ -361,3 +363,5 @@ text-size is appropriate & \\ \cmidrule{2-5}
     & MP4 & 3 &  &\\ \cmidrule{2-5} 
     & MP5 & 3 & &
 \end{tabularx}
+
+\end{small}
