@@ -71,8 +71,8 @@ User Testing is a methodology aimed at evaluating the usability of an applicatio
     % Explain that each inspector had 5 users, 3 students and 2 tourists (or viceversa)
     % Timer, in presence and in remote interview
     % Google form, can include some screenshots
-    As stated above, each inspector has recruited 5 users. In particular, two of us have recruited 3 students and 2 tourists and the other two have recruited 2 students and 3 tourists. So we have a total of 20 users, including 10 students and 10 tourists.\\
-    To easily collect the data we used a Google Form, the results of which were automatically uploaded to an Excel file. This greatly simplified the process of analysing the results.\\
+    To easily collect the data we used a Google Form, the results of which were automatically uploaded to an spreadsheet document. This greatly simplified the process of analysing the results.
+
     To avoid similar results for each tasks and a learning factor which would always penalize the performance of the very first task assigned to an user, we randomized the order of execution of the tasks.
 
     Evaluators kept track of the time required by each user to complete each task, and could tell the user to stop after too much time elapsed for a single task.
@@ -112,13 +112,23 @@ User Testing is a methodology aimed at evaluating the usability of an applicatio
     % Efficiency
     %   - table
     %   - Bar chart with (tasks, avg of completion time) for each dataset
-    The evaluator measured the time spent on each task from each user. A graphical representation of all the measured times is provided in Fig. \ref{ResultsEfficiencyStudent} and in Fig. \ref{ResultsEfficiencyTourist}. We remind that the order of execution of the tasks is random and differs for each user, in the graphs the bars are shown in order for simplicity.\\
-    An additional bar graph in Fig. \ref{ResultsEfficiencyAvg} represents the average completion time per task.
-
+    The evaluator measured the time spent on each task from each user. The bar graph in Fig. \ref{ResultsEfficiencyAvg} represents the average completion time per task.
     \begin{figure}[!ht]
         \begin{minipage}{\linewidth}
             \centering
-            \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/ResultsEfficiencyStudent.png}}%
+            \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/ResultsEfficiencyAvg.png}}%
+            \captionsetup{justification=centering}
+            \caption{Average completion time for each task}
+            \label{ResultsEfficiencyAvg}
+        \end{minipage}
+    \end{figure}
+    \pagebreak
+    \\
+    Additional graphs represent the total amount of time spent on each task grouped by students (Fig. \ref{ResultsEfficiencyStudent}) and by tourists (Fig. \ref{ResultsEfficiencyTourist}). We remind that the order of execution of the tasks is random and differs for each user, in the graphs the bars are shown in order for simplicity.\\
+    \begin{figure}[!ht]
+        \begin{minipage}{\linewidth}
+            \centering
+            \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/ResultsEfficiencyStudent.png}}%
             \captionsetup{justification=centering}
             \caption{Time spent on each task for each student}
             \label{ResultsEfficiencyStudent}
@@ -127,35 +137,36 @@ User Testing is a methodology aimed at evaluating the usability of an applicatio
     \begin{figure}[!ht]
         \begin{minipage}{\linewidth}
             \centering
-            \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/ResultsEfficiencyTourist.png}}%
+            \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{images/ResultsEfficiencyTourist.png}}%
             \captionsetup{justification=centering}
             \caption{Time spent on each task for each tourist}
             \label{ResultsEfficiencyTourist}
         \end{minipage}
     \end{figure}
-
-
-    \begin{figure}[!ht]
-        \begin{minipage}{\linewidth}
-            \centering
-            \makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{images/ResultsEfficiencyAvg.png}}%
-            \captionsetup{justification=centering}
-            \caption{Average completion time for each task}
-            \label{ResultsEfficiencyAvg}
-        \end{minipage}
-    \end{figure}
-
+    \pagebreak
 \pagebreak
-
+\\
 \subsubsection{Errors}
     A summary graph in Fig. \ref{BarsErrors} shows the average of user errors for each task.
     \begin{figure}[!ht]
         \begin{minipage}{\linewidth}
             \centering
-            \makebox[\textwidth][c]{\includegraphics[width=1\textwidth]{images/BarsErrors.png}}%
+            \makebox[\textwidth][c]{\includegraphics[width=1.1\textwidth]{images/BarsErrors.png}}%
             \captionsetup{justification=centering}
             \caption{Average of user errors for each task}
             \label{BarsErrors}
+        \end{minipage}
+    \end{figure}
+
+    \subsubsection{Task difficulty}
+    A summary graph in Fig. \ref{ResultsDifficulty} shows the difficulty score of each user for each task. The average perceived difficulty is also provided.
+    \begin{figure}[!ht]
+        \begin{minipage}{\linewidth}
+            \centering
+            \makebox[\textwidth][c]{\includegraphics[width=1.3\textwidth]{images/ResultsDifficulty.png}}%
+            \captionsetup{justification=centering}
+            \caption{Perceived task difficulty of each user and mean}
+            \label{ResultsDifficulty}
         \end{minipage}
     \end{figure}
 
